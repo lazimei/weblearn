@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="hey">{{message}}</div>
+    <script>
+        var hey = new Vue({
+            // el:通过id绑定html元素  实例挂载 初始化
+            el:'#hey', 
+            // data：实例数据对象
+            data:{
+                message:'Hello World!'
+            }
+            })
+            setTimeout(function(){
+                hey.$data.message='bye world'}
+                ,2000)
+
+    </script>
+</body>
+</html>
